@@ -1,9 +1,9 @@
 /**
  * @type { import('rollup').RollupOptions }
  */
-import resolve from "@rollup/plugin-node-resolve";
-import commonjs from "@rollup/plugin-commonjs";
-export default {
+const resolve = require("@rollup/plugin-node-resolve");
+const commonjs = require("@rollup/plugin-commonjs");
+module.exports = {
   input: "./src/index.js",
   output: [
     {
